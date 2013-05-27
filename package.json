@@ -1,0 +1,29 @@
+{
+  "name": "futils"
+  "version": "0.0.1",
+  "author": "Fusspawn <ariochofmelnibone@gmail.com>",
+  "description": "a whole bunch of tools i use",
+  "contributors": [ 
+    {
+      "name": "Paul Thornton (Fusspawn)",
+      "email": "ariochofmelnibone@gmail.com"
+    } 
+  ],
+  "main": "./loader/loader.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fusspawn/futils"
+  },
+  "dependencies" : {
+    "express"   :  "*",
+    "socket.io" :  "*",
+    "nedb" :  "*",
+    "underscore"    :  "*"
+  },  
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10"
+  }
+}
+
+            

@@ -1,0 +1,12 @@
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  var socket = io.connect('http://localhost');
+  socket.on('echo', function (data) {
+        console.log(data);
+  });
+  socket.on('rpc', function(data) {
+    console.log("rpc returned: ", JSON.stringify(data));
+  });    
+  socket.emit("echo", {message: "test"});
+  socket.emit("rpc", {key: "add", rpc_index: 0, arguments: {a: 100, b: 200}}); 
+</script>

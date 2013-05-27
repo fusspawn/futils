@@ -1,0 +1,11 @@
+{
+    echo-service: {
+        path: "./service_defs/echo.js",
+        dependencys: [
+            "webserver",
+            "socketserver",
+            "rpcserver"
+        ],
+        autostart: true
+    },
+}
