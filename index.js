@@ -1,1 +1,1 @@
-return require("./loader/loader.js");
+module.exports = require("./loader/loader.js");
