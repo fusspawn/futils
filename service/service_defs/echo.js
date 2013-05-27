@@ -1,4 +1,4 @@
-var futils = require("../loader/loader.js");
+var futils = require("../../loader/loader.js");
 
 
 var s = {
@@ -16,6 +16,8 @@ var s = {
         futils.rpcserver.register_command("echo", function(data, sender) {
              return data;
         });
+        
+        console.log("Echo Service Installed");
     },
 };
 
